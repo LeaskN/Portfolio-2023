@@ -35,6 +35,26 @@ const worktimeline = [{
         where: "Unlock-The-Box",
         date: "2018 - 2022",
     },
+    {
+        jobtitle: "Full Stack Web Development Student",
+        where: "Galvanize NYC",
+        date: "2017 - 2018",
+    },
+    {
+        jobtitle: "Datastructures & Algorithms",
+        where: "App Academy Bootcamp Prep NYC",
+        date: "2017",
+    },
+    {
+        jobtitle: "Python Learning",
+        where: "Self Taught Python Learning Course",
+        date: "2017",
+    },
+    {
+        jobtitle: "Tech Recruitment Consultant",
+        where: "Nigel Frank Recruitment, NYC",
+        date: "2017",
+    }
 ];
 
 const skills = [
