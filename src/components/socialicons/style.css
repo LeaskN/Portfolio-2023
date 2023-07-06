@@ -41,7 +41,7 @@
     transition: all .3s;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1020px) {
     .stick_follow_icon {
         width: unset;
         height: unset;

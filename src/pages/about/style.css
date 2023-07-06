@@ -27,7 +27,6 @@
 .progress-title {
     font-size: 16px;
     font-weight: 700;
-    margin: 15px 0 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -36,7 +35,6 @@
     background: var(--secondary);
     border-radius: 0;
     box-shadow: none;
-    margin-bottom: 30px;
     overflow: visible;
 }
 

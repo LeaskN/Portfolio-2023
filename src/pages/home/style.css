@@ -37,7 +37,7 @@ section {
     margin-top: -60px;
 }
 
-@media (max-width:991.98px) {
+@media (max-width:1020px) {
     .intro_sec {
         display: block;
         height: auto!important;
@@ -49,7 +49,7 @@ section {
     width: 50%;
 }
 
-@media (max-width:991.98px) {
+@media (max-width:1020px) {
     .intro_sec .text,
     .intro_sec .h_bg-image {
         width: 100%;
@@ -61,7 +61,7 @@ section {
     margin: 0 auto;
 }
 
-@media (max-width:991.98px) {
+@media (max-width:1020px) {
     .intro_sec .intro {
         max-width: 700px;
         padding-left: 20px;
@@ -192,7 +192,7 @@ section {
     justify-content: center;
 }
 
-@media (max-width:991.98px) {
+@media (max-width:1020px) {
     .intro_sec .h_bg-image {
         height: 600px;
         min-height: 75vh;
