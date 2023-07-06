@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col, Dropdown, NavDropdown } from "react-bootstrap";
+import { Container, Row, Col, NavDropdown, Navbar } from "react-bootstrap";
 import {
   dataabout,
   meta,
@@ -17,10 +17,10 @@ export const About = () => {
   function changeOrder(e) {
     setSortTitle(e.target.innerText);
     const currentOrder = e.target.attributes[0].nodeValue;
-    if(currentOrder === 'reset') return setOrder([...skills])
+    if (currentOrder === 'reset') return setOrder([...skills])
     const sorted = e.target.attributes[0].nodeValue === 'importance' ?
-    [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? 1 : -1) :
-    [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? -1 : 1);
+      [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? 1 : -1) :
+      [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? -1 : 1);
     setOrder(sorted);
   };
   return (
@@ -70,24 +70,26 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills:</h3>
-          <NavDropdown
-              id="nav-dropdown-dark-example"
-              title={`Sort by: ${sortTitle}`}
-              menuVariant="dark"
-            >
-              <NavDropdown.Item value='experience' onClick={changeOrder}>Experience</NavDropdown.Item>
-              <NavDropdown.Item value='importance' onClick={changeOrder}>Most Commonly Used</NavDropdown.Item>
-              <NavDropdown.Item value='value' onClick={changeOrder}>Skill</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item value='reset' onClick={changeOrder}>Default</NavDropdown.Item>
-            </NavDropdown>
+            <Navbar className="skillsNav">
+              <h3 className="color_sec py-4">Skills:</h3>
+              <NavDropdown
+                id="nav-dropdown-dark-example"
+                title={`Sort by: ${sortTitle}`}
+                menuVariant="dark"
+              >
+                <NavDropdown.Item value='experience' onClick={changeOrder}>Experience</NavDropdown.Item>
+                <NavDropdown.Item value='importance' onClick={changeOrder}>Most Commonly Used</NavDropdown.Item>
+                <NavDropdown.Item value='value' onClick={changeOrder}>Skill</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item value='reset' onClick={changeOrder}>Default</NavDropdown.Item>
+              </NavDropdown>
+            </Navbar>
           </Col>
           <Col lg="7">
             {order.map((data) => {
               return (
                 <div key={data.id}>
-                  <h3 className="progress-title">{data.name}, <span className='yrsExp'>{data.experience} Years Experience</span></h3>
+                  <h3 className="progress-title">{data.name}, <span className='yrsExp'>{data.experience}+ Years</span></h3>
                   <div className="progress">
                     <div
                       className="progress-bar"
