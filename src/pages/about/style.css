@@ -11,6 +11,14 @@
     border-color: var(--text-color) !important;
 }
 
+.yrsExp{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.skillDropdown {
+    background-color: transparent;
+}
 .progress-title {
     font-size: 16px;
     font-weight: 700;

@@ -10,53 +10,160 @@ const introdata = {
         first: "I love coding",
         second: "I code cool websites",
         third: "I develop mobile apps",
-        fourth:"Test"
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I am always open to new and exciting work opportunities, both in traditional employment and freelance projects.",
     img_url: "src/assets/images/react%20portfolio%20gif.gif",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About me:",
+    aboutme1: `A self taught to bootcamp certified software engineer who's focus has been on web development. Initially helping a startup grow from two people to 8+. I helped make company-wide decisions changing the trajectory of the company (for the better!) and wore many hats such a software engineer (both a front-end developer with React.js and a back-end developer with Node.js), engieering instructor, curriculum developer, software engeineering and instructor lead, project manager, and more. I've worked front-end heavy positions utilizing React and backend focused positions utilizing Node.js.`,
+    aboutme2: `I'm always in the market for exciting opportunities, freelance, traditional employment, or something else!`,
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Software Engineer II",
+        where: "Asurion Insurance Services",
+        date: "2022 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Software Engineer | Leadership Team",
+        where: "Nebula Academy",
+        date: "2018 - 2022",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Software Engineer",
+        where: "Unlock-The-Box",
+        date: "2018 - 2022",
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
+const skills = [
     {
         name: "React",
-        value: 60,
+        value: 100,
+        importance: 1,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 1
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "JavaScript",
+        value: 100,
+        importance: 1,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 2
     },
+    {
+        name: "TypeScript",
+        value: 90,
+        importance: 1,
+        experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
+        id: 3
+    },
+    {
+        name: "Node.js",
+        value: 90,
+        importance: 2,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 4
+    },
+    {
+        name: "HTML",
+        value: 100,
+        importance: 4,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 5
+    },
+    {
+        name: "CSS",
+        value: 95,
+        importance: 4,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 6
+    },
+    {
+        name: "JSON",
+        value: 100,
+        importance: 4,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 7
+    },
+    {
+        name: "Bootstrap",
+        value: 100,
+        importance: 4,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 8
+    },
+    {
+        name: "Material UI",
+        value: 95,
+        importance: 5,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 9
+    },
+    {
+        name: "Fetch",
+        value: 100,
+        importance: 5,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 10
+    },
+    {
+        name: "Express",
+        value: 90,
+        importance: 2,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 11
+    },
+    {
+        name: "AWS (Lambda, Amplify, RDS, S3, EC2, Cognito)",
+        value: 85,
+        importance: 3,
+        experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
+        id: 12
+    },
+    {
+        name: "PostgreSQL/MySQL",
+        value: 90,
+        importance: 3,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 13
+    },
+    {
+        name: "RESTful API/REST",
+        value: 90,
+        importance: 2,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 14
+    },
+    {
+        name: "Python",
+        value: 90,
+        importance: 6,
+        experience: `${new Date(new Date() - new Date('2021/06/01')).getFullYear() - 1970}`,
+        id: 15
+    },
+    {
+        name: "Postman",
+        value: 100,
+        importance: 6,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 16
+    },
+    {
+        name: "Git/GitHub",
+        value: 100,
+        importance: 6,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 17
+    },
+    {
+        name: "VS Code",
+        value: 100,
+        importance: 6,
+        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
+        id: 18
+    }
 ];
 
 const services = [{
