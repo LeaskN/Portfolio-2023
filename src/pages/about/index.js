@@ -89,6 +89,7 @@ export const About = () => {
             {order.map((data) => {
               return (
                 <div key={data.id}>
+                  <br/>
                   <h3 className="progress-title">{data.name}, <span className='yrsExp'>{data.experience}+ Years</span></h3>
                   <div className="progress">
                     <div
