@@ -4,6 +4,14 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../../assets/images/portfolio', false, /\.(png|jpe?g|svg)$/))
+
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -23,10 +31,11 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={images?.[data.img] ? images?.[data.img] : data.img } alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link1}>View Project</a>
+                  <a href={data.link2}>View GitHub</a>
                 </div>
               </div>
             );

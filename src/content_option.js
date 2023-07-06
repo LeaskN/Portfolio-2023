@@ -61,135 +61,135 @@ const skills = [
     {
         name: "React",
         value: 100,
-        importance: 1,
+        importance: 1.0,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 1
+        id: Math.random()
     },
     {
         name: "JavaScript",
         value: 100,
-        importance: 1,
+        importance: 1.2,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 2
+        id: Math.random()
     },
     {
         name: "TypeScript",
-        value: 90,
-        importance: 1,
+        value: 100,
+        importance: 1.1,
         experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
-        id: 3
+        id: Math.random()
     },
     {
         name: "Node.js",
         value: 90,
-        importance: 2,
+        importance: 1.3,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 4
+        id: Math.random()
     },
     {
         name: "HTML",
         value: 100,
-        importance: 4,
+        importance: 1.4,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 5
+        id: Math.random()
     },
     {
         name: "CSS",
         value: 95,
-        importance: 4,
+        importance: 1.41,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 6
+        id: Math.random()
     },
     {
         name: "JSON",
         value: 100,
-        importance: 4,
+        importance: 1.42,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 7
+        id: Math.random()
     },
     {
         name: "Bootstrap",
         value: 100,
         importance: 4,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 8
+        id: Math.random()
     },
     {
         name: "Material UI",
         value: 95,
         importance: 5,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 9
+        id: Math.random()
     },
     {
         name: "Fetch",
         value: 100,
         importance: 5,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 10
+        id: Math.random()
     },
     {
         name: "Express",
         value: 90,
         importance: 2,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 11
+        id: Math.random()
     },
     {
         name: "AWS (Lambda, Amplify, RDS, S3, EC2, Cognito)",
         value: 85,
         importance: 3,
         experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
-        id: 12
+        id: Math.random()
     },
     {
         name: "PostgreSQL/MySQL",
         value: 90,
         importance: 3,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 13
+        id: Math.random()
     },
     {
         name: "RESTful API/REST",
-        value: 90,
+        value: 100,
         importance: 2,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 14
+        id: Math.random()
     },
     {
         name: "Python",
         value: 90,
         importance: 6,
         experience: `${new Date(new Date() - new Date('2021/06/01')).getFullYear() - 1970}`,
-        id: 15
+        id: Math.random()
     },
     {
         name: "Java",
         value: 50,
         importance: 6,
         experience: `${new Date(new Date() - new Date('2022/06/01')).getFullYear() - 1970}`,
-        id: 15
+        id: Math.random()
     },
     {
         name: "Postman",
         value: 100,
         importance: 6,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 16
+        id: Math.random()
     },
     {
         name: "Git/GitHub",
         value: 100,
         importance: 6,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 17
+        id: Math.random()
     },
     {
         name: "VS Code",
         value: 100,
-        importance: 6,
+        importance: 1.6,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: 18
+        id: Math.random()
     }
 ];
 
@@ -231,65 +231,16 @@ const services = [{
 ];
 
 const dataportfolio = [{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: "DistanceCalculator.png",
+    description: "Distance Calculator.",
+    link1: "https://distance-calculator-leaskn.netlify.app/",
+    link2: "https://github.com/leaskn/distance-calculator",
 },
 {
     img: "https://picsum.photos/400/800/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-
-{
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/550/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    description: "More to come! Many of my projects have been proprietary therefore I can't list them. I'm actively working to create more personal projects!",
+    link1: "https://Github.com/leaskn",
+    link2: "https://Github.com/leaskn",
 },
 ];
 
