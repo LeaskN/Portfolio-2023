@@ -17,8 +17,13 @@ const introdata = {
 
 const dataabout = {
     title: "About me:",
-    aboutme1: `A self taught to bootcamp certified software engineer who's focus has been on web development. Initially helping a startup grow from two people to 8+. I helped make company-wide decisions changing the trajectory of the company (for the better!) and wore many hats such a software engineer (both a front-end developer with React.js and a back-end developer with Node.js), engieering instructor, curriculum developer, software engeineering and instructor lead, project manager, and more. I've worked front-end heavy positions utilizing React and backend focused positions utilizing Node.js.`,
-    aboutme2: `I'm always in the market for exciting opportunities, freelance, traditional employment, or something else!`,
+    aboutme1: <p>I'm a self-taught and bootcamp-certified software engineer with a strong focus on web development. Throughout my career, I have made significant contributions to the growth of a startup, playing a key role in transforming a team of two into a team of eight or more. In this dynamic environment, I not only worked as a software engineer proficient in both front-end development using React.js and back-end development with Node.js but also took on various responsibilities such as engineering instructor, curriculum developer, project manager, and more.
+
+    My expertise lies in front-end development, where I have utilized React.js to create engaging user interfaces and deliver exceptional user experiences. Additionally, I have also excelled in back-end focused positions, leveraging Node.js to develop robust and scalable applications.
+    
+    I am always open to exciting opportunities, whether it be freelance work, traditional employment, or any other interesting prospects. My passion for software engineering and my diverse skill set make me a valuable asset for any project or team.</p>,
+
+    aboutme2: <p>I'm always in the market for exciting opportunities, freelance, traditional employment, or something else! If you'd like to work together please message me <a href='/contact'>here</a></p>,
 };
 const worktimeline = [{
     jobtitle: "Software Engineer II",
