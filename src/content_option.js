@@ -239,12 +239,12 @@ const dataportfolio = [{
     img: "DistanceCalculator.png",
     description: "Distance Calculator.",
     link1: "https://distance-calculator-leaskn.netlify.app/",
-    link2: "https://github.com/leaskn/distance-calculator",
+    link2: "https://github.com/LeaskN/Distance-Calculator",
 },
 {
     img: "https://picsum.photos/400/800/?grayscale",
     description: "More to come! Many of my projects have been proprietary therefore I can't list them. I'm actively working to create more personal projects!",
-    link1: "https://Github.com/leaskn",
+    link1: "",
     link2: "https://Github.com/leaskn",
 },
 ];
