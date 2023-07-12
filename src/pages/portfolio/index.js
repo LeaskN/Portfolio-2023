@@ -34,8 +34,8 @@ export const Portfolio = () => {
                 <img src={images?.[data.img] ? images?.[data.img] : data.img } alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link1}>View Project</a>
-                  <a href={data.link2}>View GitHub</a>
+                  {data.link1?<a target='new' href={data.link1}>View Project</a> : ''}
+                  {data.link2?<a target='new' href={data.link2}>View Github</a> : ''}
                 </div>
               </div>
             );
