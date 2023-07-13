@@ -235,18 +235,25 @@ const services = [{
 // },
 ];
 
-const dataportfolio = [{
-    img: "DistanceCalculator.png",
-    description: "Distance Calculator.",
-    link1: "https://distance-calculator-leaskn.netlify.app/",
-    link2: "https://github.com/LeaskN/Distance-Calculator",
-},
-{
-    img: "https://picsum.photos/400/800/?grayscale",
-    description: "More to come! Many of my projects have been proprietary therefore I can't list them. I'm actively working to create more personal projects!",
-    link1: "",
-    link2: "https://Github.com/leaskn",
-},
+const dataportfolio = [
+    {
+        img: "DistanceCalculator.png",
+        description: "Distance Calculator",
+        link1: "https://distance-calculator-leaskn.netlify.app/",
+        link2: "https://github.com/LeaskN/Distance-Calculator",
+    },
+    {
+        img: "Not-The-Netflix.png",
+        description: "Not-The-Netflix.",
+        link1: "https://main--not-the-netflix.netlify.app/",
+        link2: "https://github.com/LeaskN/not-the-netflix",
+    },
+    {
+        img: "https://picsum.photos/400/800/?grayscale",
+        description: "More to come! Many of my projects have been proprietary therefore I can't list them. I'm actively working to create more personal projects!",
+        link1: "",
+        link2: "https://Github.com/leaskn",
+    },
 ];
 
 const contactConfig = {

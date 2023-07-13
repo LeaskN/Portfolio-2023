@@ -35,7 +35,7 @@ export const Portfolio = () => {
                 <div className="content">
                   <p>{data.description}</p>
                   {data.link1?<a target='new' href={data.link1}>View Project</a> : ''}
-                  {data.link2?<a target='new' href={data.link2}>View Github</a> : ''}
+                  {data.link2?<a target='new' href={data.link2}>Project Code</a> : ''}
                 </div>
               </div>
             );
