@@ -1,6 +1,8 @@
 ### Description
 
-A portfolio for myself. 
+[My portfolio](https://nicholasleask.com)!  
+
+It's always a work in progress, feel free to drop me a line if you'd like to chat: https://nicholasleask.com/contact
 
 ### Setup
 
