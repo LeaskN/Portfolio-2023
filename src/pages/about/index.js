@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactMarkdown from 'react-markdown'
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, NavDropdown, Navbar } from "react-bootstrap";
@@ -79,7 +80,7 @@ export const About = () => {
               >
                 <NavDropdown.Item value='experience' onClick={changeOrder}>Experience</NavDropdown.Item>
                 <NavDropdown.Item value='importance' onClick={changeOrder}>Most Commonly Used</NavDropdown.Item>
-                <NavDropdown.Item value='value' onClick={changeOrder}>Skill</NavDropdown.Item>
+                <NavDropdown.Item value='importance' onClick={changeOrder}>Alphabetical</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item value='reset' onClick={changeOrder}>Default</NavDropdown.Item>
               </NavDropdown>
@@ -87,6 +88,14 @@ export const About = () => {
           </Col>
           <Col lg="7">
             {order.map((data) => {
+              console.log(data)
+              return (
+                <ReactMarkdown key={data.id}>
+                  {data.markdown}
+                </ReactMarkdown>
+              );
+            })}
+            {/* {order.map((data) => {
               return (
                 <div key={data.id}>
                   <br/>
@@ -103,7 +112,7 @@ export const About = () => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
           </Col>
         </Row>
         <Row className="sec_sp">
