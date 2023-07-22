@@ -13,15 +13,30 @@ import {
 
 export const About = () => {
   const [order, setOrder] = useState([...skills]);
-  const [sortTitle, setSortTitle] = useState('Default')
+  const [sortTitle, setSortTitle] = useState('Default');
 
   function changeOrder(e) {
     setSortTitle(e.target.innerText);
     const currentOrder = e.target.attributes[0].nodeValue;
-    if (currentOrder === 'reset') return setOrder([...skills])
-    const sorted = e.target.attributes[0].nodeValue === 'importance' ?
-      [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? 1 : -1) :
-      [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? -1 : 1);
+    let sorted;
+    console.log(currentOrder)
+    if (currentOrder === 'reset') return setOrder([...skills]);
+    if(e.target.attributes[0].nodeValue === 'importance'){
+      sorted = [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? 1 : -1);
+    } else if(e.target.attributes[0].nodeValue === 'experience'){
+      sorted = [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? -1 : 1);
+    } else if(e.target.attributes[0].nodeValue === 'alphabetical'){
+      sorted = [...order].sort((a, b) => {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+    }
+
     setOrder(sorted);
   };
   return (
@@ -80,39 +95,20 @@ export const About = () => {
               >
                 <NavDropdown.Item value='experience' onClick={changeOrder}>Experience</NavDropdown.Item>
                 <NavDropdown.Item value='importance' onClick={changeOrder}>Most Commonly Used</NavDropdown.Item>
-                <NavDropdown.Item value='importance' onClick={changeOrder}>Alphabetical</NavDropdown.Item>
+                <NavDropdown.Item value='alphabetical' onClick={changeOrder}>Alphabetical</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item value='reset' onClick={changeOrder}>Default</NavDropdown.Item>
               </NavDropdown>
             </Navbar>
           </Col>
           <Col lg="7">
+            <div style={{display: 'flex', flexWrap: 'wrap'}}>
             {order.map((data) => {
-              console.log(data)
               return (
-                <ReactMarkdown key={data.id}>
-                  {data.markdown}
-                </ReactMarkdown>
+                <><span style={{width: '10px'}}></span><ReactMarkdown key={data.id}>{data.markdown}</ReactMarkdown></>
               );
             })}
-            {/* {order.map((data) => {
-              return (
-                <div key={data.id}>
-                  <br/>
-                  <h3 className="progress-title">{data.name}, <span className='yrsExp'>{data.experience}+ Years</span></h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })} */}
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
