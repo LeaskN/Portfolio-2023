@@ -68,7 +68,7 @@ const skills = [
         name: "React",
         markdown: '![React](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)',
         value: 101,
-        importance: 1.0,
+        importance: 1.01,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -84,7 +84,7 @@ const skills = [
         name: "TypeScript",
         markdown:'![Typescript](https://img.shields.io/badge/Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)',
         value: 100,
-        importance: 1.1,
+        importance: 1.7,
         experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -116,7 +116,7 @@ const skills = [
         name: "SASS/SCSS",
         markdown: '![SASS Badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)',
         value: 95,
-        importance: 1.41,
+        importance: 5.41,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -132,7 +132,7 @@ const skills = [
         name: "Bootstrap",
         markdown: '![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)',
         value: 100,
-        importance: 4,
+        importance: 3.0,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -140,7 +140,7 @@ const skills = [
         name: "Material UI",
         markdown: '![MaterialUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)',
         value: 95,
-        importance: 5,
+        importance: 3.1,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -148,14 +148,7 @@ const skills = [
         name: "Ant Design",
         markdown: '![Ant-Design](https://img.shields.io/badge/AntDesign-0170FE?style=for-the-badge&logo=antdesign&logoColor=white)',
         value: 95,
-        importance: 5,
-        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: Math.random()
-    },
-    {
-        name: "Fetch",
-        value: 100,
-        importance: 5,
+        importance: 3.2,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -176,10 +169,10 @@ const skills = [
         id: Math.random()
     },
     {
-        name: "Azure",
+        name: "Microsoft Azure",
         markdown: '![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)',
         value: 85,
-        importance: 3,
+        importance: 5.1,
         experience: `${new Date(new Date() - new Date('2019/06/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -187,7 +180,7 @@ const skills = [
         name: "OracleDB",
         markdown: '![Oracle](https://img.shields.io/badge/Oracle-f80000?style=for-the-badge&logo=oracle&logoColor=white)',
         value: 85,
-        importance: 3,
+        importance: 5,
         experience: `${new Date(new Date() - new Date('2022/03/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -218,7 +211,7 @@ const skills = [
         name: "Python",
         markdown: '![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)',
         value: 90,
-        importance: 6,
+        importance: 4,
         experience: `${new Date(new Date() - new Date('2021/06/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -233,7 +226,7 @@ const skills = [
         name: "Postman",
         markdown: '![PostMan](https://img.shields.io/badge/PostMan-ef5b25?style=for-the-badge&logo=PostMan&logoColor=white)',
         value: 100,
-        importance: 6,
+        importance: 2,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -241,14 +234,7 @@ const skills = [
         name: "Git/GitHub",
         markdown: '![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)',
         value: 100,
-        importance: 6,
-        experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
-        id: Math.random()
-    },
-    {
-        name: "VS Code",
-        value: 100,
-        importance: 1.6,
+        importance: 1.7,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -256,7 +242,7 @@ const skills = [
         name: "Google Cloud",
         markdown: '![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)',
         value: 100,
-        importance: 1.6,
+        importance: 6.6,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -264,7 +250,7 @@ const skills = [
         name: "VSCode",
         markdown: '![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)',
         value: 100,
-        importance: 1.6,
+        importance: 1.0,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     },
@@ -272,7 +258,7 @@ const skills = [
         name: "Markdown",
         markdown: '![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)',
         value: 100,
-        importance: 1.6,
+        importance: 7.6,
         experience: `${new Date(new Date() - new Date('2017/11/01')).getFullYear() - 1970}`,
         id: Math.random()
     }
