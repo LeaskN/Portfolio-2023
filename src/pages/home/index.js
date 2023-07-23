@@ -7,19 +7,18 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <HelmetProvider>
-      <section id="home" className="home">
+    <HelmetProvider style={{backgroundColor: 'red'}}>
+      <section>
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center ">
-              <div className="intro mx-auto">
+        <div className="homeContent">
+          {/* <div className="spacer"></div> */}
+          <div className="homeContentInfo">
                 {/* <h2 className="mb-1x">{introdata.title}</h2> */}
-                <h1 className="fluidz-48 mb-1x">
+                <h1 className="">
                   <Typewriter
                     options={{
                       strings: [
@@ -69,8 +68,6 @@ export const Home = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
       </section>
     </HelmetProvider>

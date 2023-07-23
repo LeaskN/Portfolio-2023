@@ -45,13 +45,14 @@
     .stick_follow_icon {
         width: unset;
         height: unset;
-        position: static;
+        position: sticky;
         margin-top: unset;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        padding: 40px 0;
         align-items: center;
+        margin-bottom: -50px;
+        margin-top: 75px;
     }
     .stick_follow_icon p {
         top: unset;
