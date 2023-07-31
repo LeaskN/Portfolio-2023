@@ -315,6 +315,13 @@ const dataportfolio = [
         link2: "https://github.com/LeaskN/not-the-netflix",
     },
     {
+        img: "https://user-images.githubusercontent.com/34516906/257265562-c7e221f0-5bf4-4428-a06a-3731112c1a63.png",
+        description: "7 Day Forecast.",
+        link1: "https://7-day-forecast.netlify.app/",
+        link2: "https://github.com/LeaskN/forecast-frontend",
+        link3: "https://github.com/LeaskN/forecast-backend",
+    },
+    {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "More to come! Many of my projects have been proprietary therefore I can't list them. I'm actively working to create more personal projects!",
         link1: "",
