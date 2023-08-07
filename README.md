@@ -8,7 +8,7 @@ It's always a work in progress, feel free to drop me a line if you'd like to cha
 
 Get the code
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
+<pre>git clone https://github.com/leaskn/portfolio-2023.git</pre>
  
 Install required dependencies
 
