@@ -9,7 +9,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../assets/images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../assets/images/resume', false, /\.(png|jpe?g|svg)$/));
 
 export const Resume = () => {
   return (
