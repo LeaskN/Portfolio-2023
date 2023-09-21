@@ -19,7 +19,6 @@ export const About = () => {
     setSortTitle(e.target.innerText);
     const currentOrder = e.target.attributes[0].nodeValue;
     let sorted;
-    console.log(currentOrder)
     if (currentOrder === 'reset') return setOrder([...skills]);
     if(e.target.attributes[0].nodeValue === 'importance'){
       sorted = [...order].sort((a, b) => Number(a[currentOrder]) > Number(b[currentOrder]) ? 1 : -1);
