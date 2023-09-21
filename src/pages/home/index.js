@@ -58,17 +58,17 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <a href="https://github.com/leaskn" target="blank">
+                  <Link to="/resume">
                     <div id="button_h" className="ac_btn btn">
-                      My GitHub
+                      My Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </a>
-                  <a href="/resume" target="blank">
+                  </Link>
+                  <a href="https://github.com/leaskn" target="blank">
                     <div id="button_p" className="ac_btn btn">
-                      My Resume
+                      My GitHub
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
