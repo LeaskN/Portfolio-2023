@@ -328,7 +328,14 @@ const dataportfolio = [
         link2: "https://Github.com/leaskn",
     },
 ];
-
+const resumeData = [
+    {
+        img: "Nic_Leask_Software_Engineer_Resume_9_23.jpg",
+        description: "Distance Calculator",
+        link1: "https://distance-calculator-leaskn.netlify.app/",
+        link2: "https://github.com/LeaskN/Distance-Calculator",
+    }
+]
 const contactConfig = {
     EMAIL: "",
     description: "If you'd like to get in touch about working together please drop a line below.",
@@ -354,4 +361,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    resumeData
 };

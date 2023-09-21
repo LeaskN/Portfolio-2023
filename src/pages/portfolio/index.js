@@ -10,7 +10,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../assets/images/portfolio', false, /\.(png|jpe?g|svg)$/))
+const images = importAll(require.context('../../assets/images/portfolio', false, /\.(png|jpe?g|svg)$/));
 
 export const Portfolio = () => {
   return (
