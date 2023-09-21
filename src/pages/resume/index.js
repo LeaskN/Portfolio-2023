@@ -23,7 +23,7 @@ export const Resume = () => {
         {resumeData.map((data, i) => {
           return(
             <a href='https://github.com/LeaskN/Portfolio-2023/files/12686639/Nic.Leask.Software.Engineer.Resume.9.23.pdf' alt='download Nic Leask resume'>
-              {/* <img key={data.img} src={images?.[data.img]} alt="NicLeaskResume" width='100%' />   */}
+              <img key={data.img} src={images?.[data.img]} alt="NicLeaskResume" width='100%' />  
             </a>
           )
         })}
