@@ -17,7 +17,7 @@ export const Resume = () => {
       <Container>
         <Helmet>
           <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
+          <title> Resume | {meta.title} </title>{" "}
           <meta name="description" content={meta.description} />
         </Helmet>
         {resumeData.map((data, i) => {
